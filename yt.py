@@ -3,9 +3,6 @@ from tkinter import messagebox
 import youtube_dl
 import sys
 
-root = Tk()
-root.resizable(0, 0)
-
 
 def save():
     ydl_opts = {
@@ -27,6 +24,8 @@ def exit():
     sys.exit()
 
 
+root = Tk()
+root.resizable(0, 0)
 root.title('Youtube downloader')
 l1 = Label(root, text='Download MP3 from Youtube', font=20)
 l1.pack()
